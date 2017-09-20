@@ -19,7 +19,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokedex_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokedex3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -63,7 +63,7 @@
                                     <constraint firstAttribute="bottom" secondItem="3L3-r8-rZx" secondAttribute="bottom" constant="5" id="sK6-5a-rt3"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="xRk-oq-rR1">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="xRk-oq-rR1">
                                 <rect key="frame" x="0.0" y="65" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -80,7 +80,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="5rR-Ic-Efp" customClass="PokeCell" customModule="Pokedex_3" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="5rR-Ic-Efp" customClass="PokeCell" customModule="Pokedex3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="115" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -140,11 +140,50 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="wdd-GF-bSn" id="ICa-ZV-GOd"/>
+                        <outlet property="searchBar" destination="xRk-oq-rR1" id="RjA-jN-thg"/>
+                        <segue destination="mlZ-Js-LmV" kind="show" identifier="PokemonDetailVC" id="MY9-ts-Hp5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="153" y="139"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="ouq-hW-60u">
+            <objects>
+                <viewController id="mlZ-Js-LmV" customClass="PokemonDetailVC" customModule="Pokedex3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xcc-2g-Ird"/>
+                        <viewControllerLayoutGuide type="bottom" id="dRS-wc-ABD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cOP-qx-Y2F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVf-W1-lW1">
+                                <rect key="frame" x="120" y="303" width="135" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Cjv-yy-8D3"/>
+                                    <constraint firstAttribute="height" constant="60" id="xo6-tW-C6e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NVf-W1-lW1" firstAttribute="centerY" secondItem="cOP-qx-Y2F" secondAttribute="centerY" id="4ah-ho-HW5"/>
+                            <constraint firstItem="NVf-W1-lW1" firstAttribute="centerX" secondItem="cOP-qx-Y2F" secondAttribute="centerX" id="el7-ch-Oen"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="NVf-W1-lW1" id="LGI-o7-wV0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQP-Zu-Wcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.60000000000002" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>

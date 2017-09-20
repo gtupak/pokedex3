@@ -16,6 +16,7 @@
 		C092D6511F71982A00EC9A1E /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092D6501F71982A00EC9A1E /* Pokemon.swift */; };
 		C092D6541F719E0C00EC9A1E /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092D6531F719E0C00EC9A1E /* PokeCell.swift */; };
 		C092D6561F71A42400EC9A1E /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092D6551F71A42400EC9A1E /* csv.swift */; };
+		C0A4830C1F72BC4600D85582 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A4830B1F72BC4600D85582 /* PokemonDetailVC.swift */; };
 		C0A9AFA11F72AF22002734F6 /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0A9AFA01F72AF22002734F6 /* PokemonSolid.ttf */; };
 		C0A9AFA61F72B179002734F6 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0A9AFA51F72B179002734F6 /* music.mp3 */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		C092D6501F71982A00EC9A1E /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		C092D6531F719E0C00EC9A1E /* PokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		C092D6551F71A42400EC9A1E /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		C0A4830B1F72BC4600D85582 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		C0A9AFA01F72AF22002734F6 /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
 		C0A9AFA51F72B179002734F6 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = music.mp3; path = ../../../../../Downloads/pokedex3/pokedex3/music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C092D63D1F71946A00EC9A1E /* ViewController.swift */,
+				C0A4830B1F72BC4600D85582 /* PokemonDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				C092D63E1F71946A00EC9A1E /* ViewController.swift in Sources */,
 				C092D63C1F71946A00EC9A1E /* AppDelegate.swift in Sources */,
 				C092D6541F719E0C00EC9A1E /* PokeCell.swift in Sources */,
+				C0A4830C1F72BC4600D85582 /* PokemonDetailVC.swift in Sources */,
 				C092D6511F71982A00EC9A1E /* Pokemon.swift in Sources */,
 				C092D6561F71A42400EC9A1E /* csv.swift in Sources */,
 			);
@@ -334,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AR992B335D;
-				INFOPLIST_FILE = "Pokedex3/Info.plist";
+				INFOPLIST_FILE = Pokedex3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.essentialtech.Pokedex-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AR992B335D;
-				INFOPLIST_FILE = "Pokedex3/Info.plist";
+				INFOPLIST_FILE = Pokedex3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.essentialtech.Pokedex-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
